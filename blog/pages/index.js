@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Button } from 'antd'
+import Header from '../components/Header'
 
 export default function Home() {
   return (
@@ -8,9 +9,8 @@ export default function Home() {
         <title>Roy's Next Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <Button type="primary">这是一个按钮</Button>
-      </div>
+
+      <Header />
     </div>
   )
 }
