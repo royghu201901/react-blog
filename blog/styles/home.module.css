@@ -1,0 +1,30 @@
+.homeListTitle {
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
+
+.homeListStyle {
+  width: 0.625rem;
+  height: 0.625rem;
+  background: linear-gradient(136deg, #6294A2 0%, #58C3DD 100%);
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  margin-right: 0.75rem;
+  float: left;
+}
+
+.homeListItemTitle {
+  font-size: 1.3rem;
+  color: #1e90ff;
+  padding: 0 0.5rem;
+}
+
+.homeListItemDescription span {
+  margin-left: .5rem;
+  margin-top: .5rem;
+}
+
+.homeListItemContext {
+  color: #777;
+  padding: .5rem;
+}
