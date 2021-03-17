@@ -17,6 +17,10 @@
       color: #F0F0F0;
       margin-left: 3.375rem;
       margin-top: 2.5rem;
+      @media screen and (min-width: 1281px) {
+        margin-top: 4.625rem;
+        margin-left: 6.5rem;
+      }
     }
     .description {
       font-size: 0.9374rem;
@@ -26,11 +30,19 @@
       color: #FCFCFC;
       margin-left: 3.375rem;
       margin-top: -1rem;
+      @media screen and (min-width: 1281px) {
+        margin-top: 2rem;
+        margin-left: 6.5rem;
+      }
     }
     a {
       display: block;
       width: 11.625rem;
       margin-left: 3.375rem;
+      @media screen and (min-width: 1281px) {
+        margin-top: 2rem;
+        margin-left: 6.5rem;
+      }
     }
     .readMoreButton {
       width: 11.625rem;
@@ -61,6 +73,10 @@
       text-align: center;
       border-radius: 1rem;
       opacity: 0.75;
+      @media screen and (min-width: 1281px) {
+        margin-top: -10rem;
+        margin-right: 6.5rem;
+      }
       cursor: pointer;
       span {
         font-size: 0.75rem;

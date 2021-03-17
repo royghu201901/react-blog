@@ -12,7 +12,7 @@ export default function Info() {
         <p className={styles.title}>Roy Gang Hu</p>
         <p className={styles.description}>毕业于Teaxs A & M University</p>
         <p className={styles.description}>现在杭州从事前端工作</p>
-        <a href="https://github.com/royghu201901">
+        <a href="https://github.com/royghu201901" target="_blank">
           <GithubOutlined style={{ fontSize: '2rem', color: '#fff' }} />
         </a>
       </div>

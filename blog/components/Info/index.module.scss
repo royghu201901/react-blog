@@ -17,6 +17,11 @@
       color: #F0F0F0;
       margin-left: 2.5rem;
       margin-top: 2.5rem;
+      @media screen and (min-width: 1281px) {
+        margin-top: 3.675rem;
+        margin-bottom: 2rem;
+        margin-left: 4rem;
+      }
     }
     .description {
       font-size: 0.9375rem;
@@ -26,12 +31,19 @@
       color: #FCFCFC;
       opacity: 0.57;
       margin-left: 2.5rem;
+      @media screen and (min-width: 1281px) {
+        margin-left: 4rem;
+      }
     }
     a {
       display: block;
       float: right;
       margin-right: 2rem;
       margin-top: -1rem;
+      @media screen and (min-width: 1281px) {
+        margin-top: 2rem;
+        margin-right: 4rem;
+      }
     }
   }
 }
