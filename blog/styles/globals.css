@@ -1,3 +1,22 @@
 body {
   background-color: #f5f7fa;
 }
+
+.left{
+  background-color: #FFF;
+  padding:.3rem;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+}
+
+.right{
+  background-color: #FFF;
+  margin-left: 1rem;
+  padding: .3rem;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+}
+
+.main{
+  margin-top: 1rem;
+}
