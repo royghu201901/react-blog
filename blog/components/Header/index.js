@@ -22,8 +22,10 @@ export default function Header() {
         <Col xs={0} sm={0} md={8} lg={8} xl={6} >
           <Menu mode="horizontal">
             <Menu.Item key="home">
-              <HomeOutlined />
-              博客首页
+              <a href="/">
+                <HomeOutlined />
+                博客首页
+              </a>
             </Menu.Item>
             <Menu.Item key="camera">
               <CameraOutlined />

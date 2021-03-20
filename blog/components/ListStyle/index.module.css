@@ -1,0 +1,9 @@
+.listStyle {
+  width: 0.625rem;
+  height: 0.625rem;
+  background: linear-gradient(136deg, #6294A2 0%, #58C3DD 100%);
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  margin-right: 0.75rem;
+  float: left;
+}

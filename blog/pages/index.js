@@ -9,6 +9,8 @@ import {
 import Header from '../components/Header'
 import Banner from '../components/Banner'
 import Info from '../components/Info'
+import ListStyle from '../components/ListStyle'
+import Footer from '../components/Footer'
 import styles from '../styles/home.module.css'
 
 export default function Home() {
@@ -38,7 +40,8 @@ export default function Home() {
           <List 
             header={
               <div className={styles.homeListTitle}>
-                <div className={styles.homeListStyle}></div>
+                {/* <div className={styles.homeListStyle}></div> */}
+                <ListStyle />
                 <span>最新日志</span>
               </div>
             }
@@ -72,6 +75,8 @@ export default function Home() {
           <Info />
         </Col>
       </Row>
+
+      <Footer />
     </div>
   )
 }
