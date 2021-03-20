@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import Banner from '../components/Banner'
 import ListStyle from '../components/ListStyle'
 import Footer from '../components/Footer'
+import Detail from '../components/Detail'
 
 import styles from '../styles/detail.module.scss'
 
@@ -27,6 +28,7 @@ export default function detail() {
           xs={24} sm={24} md={18} lg={18} xl={17}
         >
           <p className={styles.title}>Title</p>
+          <Detail />
         </Col>
       </Row>
 
