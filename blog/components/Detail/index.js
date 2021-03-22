@@ -2,11 +2,13 @@ import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm'
 import CodeBlock from '../CodeBlock'
 
-import markdown from '../../public/blog/20210319.md'
+import styles from './index.module.scss'
+
+import markdown from '../../public/blog/20210315.md'
 
 const Detail = () => {
   return (
-    <div className="detailed-content">
+    <div className={styles.detail}>
       <ReactMarkdown
         plugins={[gfm]}
         children={markdown}

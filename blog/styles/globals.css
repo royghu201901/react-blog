@@ -20,14 +20,6 @@ body {
   box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
 } */
 
-.detail {
-  background-color: #FCFCFC;
-  margin-bottom: 2rem;
-  padding:.3rem;
-  border-bottom: 1px solid #eee;
-  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
-}
-
 .main{
   margin-top: 1rem;
   margin-bottom: 1rem;
