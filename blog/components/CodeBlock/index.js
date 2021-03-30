@@ -6,7 +6,7 @@ import { materialLight } from "react-syntax-highlighter/dist/cjs/styles/prism";
 // 设置高亮的语言
 import { jsx, javascript, bash, css } from "react-syntax-highlighter/dist/cjs/languages/prism";
 
-import styles from './index.module.scss'
+import styles from './index.module.css'
 
 class CodeBlock extends PureComponent {
   static propTypes = {

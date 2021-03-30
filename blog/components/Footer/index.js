@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './index.module.scss'
+import styles from './index.module.css'
 import ListStyle from '../ListStyle'
 import { Col, Row } from 'antd'
 

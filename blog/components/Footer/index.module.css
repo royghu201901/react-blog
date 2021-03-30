@@ -1,0 +1,47 @@
+.footer {
+  width: 100%;
+  height: 14.625rem;
+  box-shadow: 0 1px 4px rgba(89, 90, 89, 0.28);
+}
+.footer .wrapper {
+  padding: 3rem 0.3rem 0;
+}
+.footer .nameLeft {
+  font-size: 1.375rem;
+  font-family: Acumin Pro;
+  font-weight: bold;
+  line-height: 1.625rem;
+  color: #404040;
+}
+.footer .nameRight {
+  font-size: 1.375rem;
+  font-family: Acumin Pro;
+  font-weight: normal;
+  line-height: 1.625rem;
+  color: #404040;
+}
+.footer .copyRight {
+  font-size: 1.125rem;
+  font-family: Acumin Pro;
+  font-weight: 300;
+  line-height: 1.625rem;
+  color: #404040;
+  opacity: 0.27;
+  margin-left: 1rem;
+}
+.footer .title {
+  font-size: 1rem;
+  font-family: Acumin Pro;
+  font-weight: 500;
+  line-height: 1.625rem;
+  color: #404040;
+  margin-top: 2rem;
+}
+.footer .description {
+  font-size: 0.9375rem;
+  font-family: Acumin Pro;
+  font-weight: 300;
+  line-height: 1.625rem;
+  color: #404040;
+  opacity: 0.58;
+}

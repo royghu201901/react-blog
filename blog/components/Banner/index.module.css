@@ -1,0 +1,95 @@
+.banner {
+  margin-top: 1rem;
+  position: relative;
+}
+.banner img {
+  width: 100%;
+}
+.banner .wrapper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.banner .wrapper .title {
+  font-size: 2rem;
+  font-family: Acumin Pro;
+  font-weight: 600;
+  line-height: 2rem;
+  color: #F0F0F0;
+  margin-left: 3.375rem;
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 1281px) {
+  .banner .wrapper .title {
+    margin-top: 4.625rem;
+    margin-left: 6.5rem;
+  }
+}
+.banner .wrapper .description {
+  font-size: 0.9374rem;
+  font-family: Acumin Pro Semibold;
+  font-weight: 300;
+  color: #FCFCFC;
+  margin-left: 3.375rem;
+  margin-top: -1rem;
+}
+@media screen and (min-width: 1281px) {
+  .banner .wrapper .description {
+    margin-top: 2rem;
+    margin-left: 6.5rem;
+  }
+}
+.banner .wrapper a {
+  display: block;
+  width: 11.625rem;
+  margin-left: 3.375rem;
+}
+@media screen and (min-width: 1281px) {
+  .banner .wrapper a {
+    margin-top: 2rem;
+    margin-left: 6.5rem;
+  }
+}
+.banner .wrapper .readMoreButton {
+  width: 11.625rem;
+  height: 2.75rem;
+  background: linear-gradient(94deg, #6294A2 0%, #58C3DD 100%);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.11);
+  opacity: 1;
+  border-radius: 1.375rem;
+  text-align: center;
+  cursor: pointer;
+}
+.banner .wrapper .readMoreButton span {
+  font-size: 1rem;
+  font-family: Acumin Pro;
+  font-weight: 500;
+  line-height: 2.75rem;
+  color: #F0F0F0;
+}
+.banner .wrapper .newArticalButton {
+  width: 7.75rem;
+  height: 1.625rem;
+  float: right;
+  margin-right: 3.375rem;
+  margin-top: -8rem;
+  background: #FCFCFC;
+  text-align: center;
+  border-radius: 1rem;
+  opacity: 0.75;
+  cursor: pointer;
+}
+@media screen and (min-width: 1281px) {
+  .banner .wrapper .newArticalButton {
+    margin-top: -10rem;
+    margin-right: 6.5rem;
+  }
+}
+.banner .wrapper .newArticalButton span {
+  font-size: 0.75rem;
+  font-family: Acumin Pro;
+  font-weight: bold;
+  line-height: 1.625rem;
+  color: #5E8A93;
+}
