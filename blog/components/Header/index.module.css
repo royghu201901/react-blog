@@ -1,0 +1,12 @@
+.header {
+  background-color: #fff;
+  overflow: hidden;
+  height: 3rem;
+  width: 100%;
+  box-shadow: 0 1px 4px rgb(89 90 89 / 28%);
+}
+
+.headerText {
+  margin-left: 1rem;
+  color: #909399;
+}

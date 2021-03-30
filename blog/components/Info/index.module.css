@@ -1,0 +1,55 @@
+.info {
+  position: relative;
+  width: 100%;
+}
+.info img {
+  width: 100%;
+}
+.info .wrapper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.info .wrapper .title {
+  font-size: 2rem;
+  font-family: Acumin Pro;
+  font-weight: 600;
+  line-height: 2rem;
+  color: #F0F0F0;
+  margin-left: 2.5rem;
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 1281px) {
+  .info .wrapper .title {
+    margin-top: 3.675rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+  }
+}
+.info .wrapper .description {
+  font-size: 0.9375rem;
+  font-family: Acumin Pro;
+  font-weight: 300;
+  line-height: 1.125rem;
+  color: #FCFCFC;
+  opacity: 0.57;
+  margin-left: 2.5rem;
+}
+@media screen and (min-width: 1281px) {
+  .info .wrapper .description {
+    margin-left: 4rem;
+  }
+}
+.info .wrapper a {
+  display: block;
+  float: right;
+  margin-right: 2rem;
+  margin-top: -1rem;
+}
+@media screen and (min-width: 1281px) {
+  .info .wrapper a {
+    margin-top: 2rem;
+    margin-right: 4rem;
+  }
+}

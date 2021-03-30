@@ -10,7 +10,7 @@ import Footer from '../components/Footer'
 import Detail from '../components/Detail'
 import DetailNav from '../components/DetailNav'
 
-import styles from '../styles/detail.module.scss'
+import styles from '../styles/detail.module.css'
 
 
 export default function detail() {
