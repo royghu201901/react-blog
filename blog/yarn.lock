@@ -311,6 +311,13 @@ async-validator@^3.0.3:
   resolved "https://registry.npm.taobao.org/async-validator/download/async-validator-3.5.1.tgz?cache=0&sync_timestamp=1605751734916&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fasync-validator%2Fdownload%2Fasync-validator-3.5.1.tgz"
   integrity sha1-zWK5aIskZfSEIOJ620d2CrG1VZ8=
 
+axios@^0.21.1:
+  version "0.21.1"
+  resolved "https://registry.npm.taobao.org/axios/download/axios-0.21.1.tgz?cache=0&sync_timestamp=1608609324963&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxios%2Fdownload%2Faxios-0.21.1.tgz"
+  integrity sha1-IlY0gZYvTWvemnbVFu8OXTwJsrg=
+  dependencies:
+    follow-redirects "^1.10.0"
+
 babel-plugin-import@^1.13.3:
   version "1.13.3"
   resolved "https://registry.npm.taobao.org/babel-plugin-import/download/babel-plugin-import-1.13.3.tgz?cache=0&sync_timestamp=1606209888079&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fbabel-plugin-import%2Fdownload%2Fbabel-plugin-import-1.13.3.tgz"
@@ -619,7 +626,7 @@ copy-to-clipboard@^3.2.0:
 
 core-js@3:
   version "3.9.1"
-  resolved "https://registry.npm.taobao.org/core-js/download/core-js-3.9.1.tgz?cache=0&sync_timestamp=1614537310447&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcore-js%2Fdownload%2Fcore-js-3.9.1.tgz#cec8de593db8eb2a85ffb0dbdeb312cb6e5460ae"
+  resolved "https://registry.npm.taobao.org/core-js/download/core-js-3.9.1.tgz?cache=0&sync_timestamp=1614537310447&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcore-js%2Fdownload%2Fcore-js-3.9.1.tgz"
   integrity sha1-zsjeWT246yqF/7Db3rMSy25UYK4=
 
 core-util-is@~1.0.0:
@@ -910,6 +917,11 @@ find-up@^4.0.0:
   dependencies:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
+
+follow-redirects@^1.10.0:
+  version "1.13.3"
+  resolved "https://registry.npm.taobao.org/follow-redirects/download/follow-redirects-1.13.3.tgz?cache=0&sync_timestamp=1614437038110&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffollow-redirects%2Fdownload%2Ffollow-redirects-1.13.3.tgz"
+  integrity sha1-5VmK1QF0wbxOhyMB6CrCzZf5Amc=
 
 format@^0.2.0:
   version "0.2.2"
@@ -1274,7 +1286,7 @@ make-dir@^3.0.2:
 
 markdown-navbar@^1.4.3:
   version "1.4.3"
-  resolved "https://registry.npm.taobao.org/markdown-navbar/download/markdown-navbar-1.4.3.tgz#f92e7ec5cf58b994e90188794497a1b597621b7d"
+  resolved "https://registry.npm.taobao.org/markdown-navbar/download/markdown-navbar-1.4.3.tgz"
   integrity sha1-+S5+xc9YuZTpAYh5RJehtZdiG30=
   dependencies:
     core-js "3"
@@ -2238,7 +2250,7 @@ react@17.0.1:
 
 react@^16.12.0:
   version "16.14.0"
-  resolved "https://registry.npm.taobao.org/react/download/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
+  resolved "https://registry.npm.taobao.org/react/download/react-16.14.0.tgz"
   integrity sha1-lNd23dCqo32j7aj8W2sYpMmjEU0=
   dependencies:
     loose-envify "^1.1.0"
