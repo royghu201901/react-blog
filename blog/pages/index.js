@@ -14,6 +14,8 @@ import Banner from '../components/Banner'
 import Info from '../components/Info'
 import ListStyle from '../components/ListStyle'
 import Footer from '../components/Footer'
+import SERVICE_PATH from '../config/api'
+
 import styles from '../styles/home.module.css'
 
 const home = (list) => {
@@ -91,7 +93,7 @@ const home = (list) => {
 home.getInitialProps = async () => {
   const promise = new Promise((resolve) => {
     axios.get(
-      'http://127.0.0.1:7001/blog/getArticleList'
+      SERVICE_PATH.GET_ARTICLE_LIST
     ).then(
       res => {
         resolve(res.data)

@@ -7,10 +7,11 @@ import axios from 'axios'
 import Header from '../components/Header'
 import Banner from '../components/Banner'
 import Info from '../components/Info'
-import ListStyle from '../components/ListStyle'
+// import ListStyle from '../components/ListStyle'
 import Footer from '../components/Footer'
 import Detail from '../components/Detail'
 import DetailNav from '../components/DetailNav'
+import SERVICE_PATH from '../config/api'
 
 import styles from '../styles/detail.module.css'
 
@@ -54,7 +55,7 @@ const detail = (content) => {
 detail.getInitialProps = async(ctx) => {
   let id = ctx.query.id
   return await axios.get(
-    'http://127.0.0.1:7001/blog/getArticleById/' + id
+    SERVICE_PATH.GET_ARTICLE_BY_ID + id
   ).then(
     res => res.data.data[0]
   ).catch(
