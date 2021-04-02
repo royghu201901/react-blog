@@ -4,9 +4,10 @@ import 'markdown-navbar/dist/navbar.css'
 
 import styles from './index.module.css'
 
-import markdown from '../../public/blog/20210315.md'
+// import markdown from '../../public/blog/20210315.md'
 
-const DetailNav = () => {
+const DetailNav = (props) => {
+  const markdown = props.content
   return (
     <div className={styles.navigationBox}> 
       <div className="navigation">

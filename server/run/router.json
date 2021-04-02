@@ -19,8 +19,32 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/blog/list",
-    "regexp": "/^\\/blog\\/list(?:\\/(?=$))?$/",
+    "path": "/blog/getArticleList",
+    "regexp": "/^\\/blog\\/getArticleList(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/blog/getArticleById/:id",
+    "regexp": "/^\\/blog\\/getArticleById\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

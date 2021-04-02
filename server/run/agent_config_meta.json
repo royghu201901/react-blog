@@ -16,14 +16,11 @@
       "connectionLimit": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-mysql/config/config.default.js"
     }
   },
-  "session": {
-    "maxAge": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-session/config/config.default.js",
-    "key": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-session/config/config.default.js",
-    "httpOnly": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-session/config/config.default.js",
-    "encrypt": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-session/config/config.default.js"
-  },
   "security": {
-    "domainWhiteList": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-security/config/config.default.js",
+    "scrf": {
+      "enable": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/config/config.default.js"
+    },
+    "domainWhiteList": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/config/config.default.js",
     "protocolWhiteList": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-security/config/config.default.js",
     "defaultMiddleware": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-security/config/config.default.js",
     "csrf": {
@@ -75,6 +72,16 @@
       "ipBlackList": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-security/config/config.default.js",
       "checkAddress": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-security/config/config.default.js"
     }
+  },
+  "cors": {
+    "origin": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/config/config.default.js",
+    "allowMethods": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/config/config.default.js"
+  },
+  "session": {
+    "maxAge": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-session/config/config.default.js"
   },
   "helper": {
     "shtml": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-security/config/config.default.js"
@@ -180,6 +187,7 @@
     },
     "dependencies": {
       "egg": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg/config/config.default.js",
+      "egg-cors": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg/config/config.default.js",
       "egg-mysql": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg/config/config.default.js",
       "egg-scripts": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg/config/config.default.js"
     },

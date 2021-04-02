@@ -13,7 +13,9 @@
       "genid": "<Function v4>"
     },
     "security": {
-      "domainWhiteList": [],
+      "domainWhiteList": [
+        "*"
+      ],
       "protocolWhiteList": [],
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
       "csrf": {
@@ -72,6 +74,9 @@
         "ipBlackList": null,
         "checkAddress": null
       },
+      "scrf": {
+        "enable": false
+      },
       "_protocolWhiteListSet": "<Set>"
     },
     "helper": {
@@ -106,6 +111,7 @@
         "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-static/config/locales",
         "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-view/config/locales",
         "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-mysql/config/locales",
+        "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-cors/config/locales",
         "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg/config/locales",
         "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/config/locales"
       ],
@@ -194,6 +200,10 @@
         "database": "react_blog"
       }
     },
+    "cors": {
+      "origin": "*",
+      "allowMethods": "GET, HEAD, PUT, POST, DELETE, PATCH, OPTIONS"
+    },
     "env": "local",
     "name": "next-blog",
     "keys": "<String len: 28>",
@@ -214,6 +224,7 @@
       },
       "dependencies": {
         "egg": "^2.15.1",
+        "egg-cors": "^2.2.3",
         "egg-mysql": "^3.0.0",
         "egg-scripts": "^2.11.0"
       },
@@ -328,6 +339,7 @@
       "logging": false
     },
     "coreMiddleware": [
+      "cors",
       "meta",
       "siteFile",
       "notfound",
@@ -527,6 +539,17 @@
       "from": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/config/plugin.js",
       "path": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-mysql",
       "version": "3.0.0"
+    },
+    "cors": {
+      "enable": true,
+      "package": "egg-cors",
+      "name": "cors",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/config/plugin.js",
+      "path": "/Users/ganghu/Desktop/会盟项目资料/React/react-test/react-blog/server/node_modules/egg-cors",
+      "version": "2.2.3"
     }
   }
 }

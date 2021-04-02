@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head'
+// import { withRouter} from 'next/router'
 import { Row, Col, Affix } from 'antd'
+import axios from 'axios'
 
 import Header from '../components/Header'
 import Banner from '../components/Banner'
@@ -12,8 +14,9 @@ import DetailNav from '../components/DetailNav'
 
 import styles from '../styles/detail.module.css'
 
+const detail = (content) => {
+  const [detailContent, setDetailContent] = useState(content)
 
-export default function detail() {
   return (
     <div>
       <Head>
@@ -29,8 +32,8 @@ export default function detail() {
           className={styles.detail}
           xs={24} sm={24} md={10} lg={10} xl={10}
         >
-          <p className={styles.title}>2021.03.15</p>
-          <Detail />
+          <p className={styles.title}>{detailContent.title}</p>
+          <Detail content={detailContent.article_content} />
         </Col>
         <Col
           className="right"
@@ -38,7 +41,7 @@ export default function detail() {
         >
           <Info />
           <Affix offsetTop={5}>
-            <DetailNav />
+            <DetailNav content={detailContent.article_content} />
           </Affix>
         </Col>
       </Row>
@@ -47,3 +50,34 @@ export default function detail() {
     </div>
   )
 }
+
+detail.getInitialProps = async(ctx) => {
+  // console.log(ctx)
+  let id = ctx.query.id
+  // const promise = new Promise((resolve) => {
+  //   axios.get(
+  //     'http://127.0.0.1:7001/blog/getArticleById/' + id
+  //   ).then(
+  //     res => {
+  //       // console.log(res.data.data[0])
+  //       resolve(res.data.data[0])
+  //     }
+  //   ).catch(
+  //     err => {
+        
+  //     }
+  //   )
+  // })
+  // return await promise
+  return await axios.get(
+    'http://127.0.0.1:7001/blog/getArticleById/' + id
+  ).then(
+    res => res.data.data[0]
+  ).catch(
+    err => {
+      console.log(err)
+    }
+  )
+}
+
+export default detail
