@@ -15,7 +15,7 @@ import DetailNav from '../components/DetailNav'
 import styles from '../styles/detail.module.css'
 
 const detail = (content) => {
-  const [detailContent, setDetailContent] = useState(content)
+  // const [detailContent, setDetailContent] = useState(content)
 
   return (
     <div>
@@ -32,8 +32,8 @@ const detail = (content) => {
           className={styles.detail}
           xs={24} sm={24} md={10} lg={10} xl={10}
         >
-          <p className={styles.title}>{detailContent.title}</p>
-          <Detail content={detailContent.article_content} />
+          <p className={styles.title}>{content.title}</p>
+          <Detail content={content.article_content} />
         </Col>
         <Col
           className="right"
@@ -41,7 +41,7 @@ const detail = (content) => {
         >
           <Info />
           <Affix offsetTop={5}>
-            <DetailNav content={detailContent.article_content} />
+            <DetailNav content={content.article_content} />
           </Affix>
         </Col>
       </Row>
@@ -52,23 +52,7 @@ const detail = (content) => {
 }
 
 detail.getInitialProps = async(ctx) => {
-  // console.log(ctx)
   let id = ctx.query.id
-  // const promise = new Promise((resolve) => {
-  //   axios.get(
-  //     'http://127.0.0.1:7001/blog/getArticleById/' + id
-  //   ).then(
-  //     res => {
-  //       // console.log(res.data.data[0])
-  //       resolve(res.data.data[0])
-  //     }
-  //   ).catch(
-  //     err => {
-        
-  //     }
-  //   )
-  // })
-  // return await promise
   return await axios.get(
     'http://127.0.0.1:7001/blog/getArticleById/' + id
   ).then(
