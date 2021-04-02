@@ -47,11 +47,13 @@ module.exports = appInfo => {
     scrf: {
       enable: false
     },
+    // 设置白名单，这里设置了全部可以跨域
     domainWhiteList: ['*']
   };
 
   config.cors = {
     origin: '*',
+    // 需要什么接口形式自己加
     allowMethods: 'GET, HEAD, PUT, POST, DELETE, PATCH, OPTIONS'
   }
 
