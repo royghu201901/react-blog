@@ -9,12 +9,7 @@ import styles from './index.module.css'
 // import { withRouter } from 'next/router'
 
 const Detail = (props) => {
-  let markdown = ''
-  if (props) {
-    markdown = props.content
-  } else {
-    markdown = props
-  }
+  let markdown = props.content
   return (
     <div className={styles.detail}>
       <ReactMarkdown
