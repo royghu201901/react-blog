@@ -16,8 +16,9 @@ class HomeController extends Controller {
       'article.view_count as view_count ,' +
       'type.type_name as type_name ' +
       'FROM article LEFT JOIN type ON article.type_id = type.id ' +
-      'ORDER BY article.id DESC'
-      
+      'ORDER BY article.id DESC ' +
+      'LIMIT 0,10'
+
     const results = await this.app.mysql.query(sql)
     this.ctx.body = {data: results}
   }
@@ -37,6 +38,20 @@ class HomeController extends Controller {
 
     const result = await this.app.mysql.query(sql)
     this.ctx.body = {data: result}
+  }
+
+  async getArticleFullList() {
+    let sql = 'SELECT article.id as id ,' +
+      'article.title as title ,' +
+      'article.introduce as introduce ,' +
+      "DATE_FORMAT(article.update_time, '%Y-%m-%d %H:%i:%s') as update_time ," +
+      'article.view_count as view_count ,' +
+      'type.type_name as type_name ' +
+      'FROM article LEFT JOIN type ON article.type_id = type.id ' +
+      'ORDER BY article.id DESC'
+
+    const results = await this.app.mysql.query(sql)
+    this.ctx.body = {data: results}
   }
 }
 

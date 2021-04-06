@@ -1,6 +1,8 @@
 import React from 'react'
-import styles from './index.module.css'
+import Link from 'next/link'
 import { Row, Col } from 'antd'
+
+import styles from './index.module.css'
 
 export default function Banner() {
   return (
@@ -16,9 +18,13 @@ export default function Banner() {
                 <span>Read more</span>
               </div>
             </a>
-            <div className={styles.newArticalButton}>
-              <span>最近更新</span>
-            </div>
+            <Link href='/'>
+              <a className={styles.newArticalLink}>
+                <div className={styles.newArticalButton}>
+                  <span>最近更新</span>
+                </div>
+              </a>
+            </Link>
           </div>
         </Col>
       </Row>
