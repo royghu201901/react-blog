@@ -12,6 +12,7 @@ import axios from 'axios'
 import Header from '../components/Header'
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
+import Detail from '../components/Detail'
 import SERVICE_PATH from '../config/api'
 
 import styles from '../styles/home.module.css'
@@ -52,7 +53,7 @@ const list = (list) => {
                   }
                 />
                 <div className={styles.homeListItemContext}>
-                  {item.introduce}
+                  <Detail content={item.introduce} />
                 </div>
               </List.Item>
             )}

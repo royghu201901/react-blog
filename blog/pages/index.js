@@ -14,6 +14,7 @@ import Banner from '../components/Banner'
 import Info from '../components/Info'
 import ListStyle from '../components/ListStyle'
 import Footer from '../components/Footer'
+import Detail from '../components/Detail'
 import SERVICE_PATH from '../config/api'
 
 import styles from '../styles/home.module.css'
@@ -63,7 +64,7 @@ const home = (list) => {
                   }
                 />
                 <div className={styles.homeListItemContext}>
-                  {item.introduce}
+                  <Detail content={item.introduce} />
                 </div>
               </List.Item>
             )}
